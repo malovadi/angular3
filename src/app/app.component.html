@@ -1,0 +1,26 @@
+
+<mat-toolbar color="primary">
+  <span>{{title}}</span>
+</mat-toolbar><!-- це верхня фіолетова лінія-->
+
+<mat-drawer-container class="example-container">
+
+  <mat-drawer mode="side" opened>
+
+
+    <mat-list>
+      <div *ngFor="let group of groups" class="list-item" (click)="filterDishes(group.dishes)">
+        <mat-list-item>{{group.category}}</mat-list-item>
+        <mat-divider></mat-divider>
+      </div>
+    </mat-list>
+  </mat-drawer>
+
+  <mat-drawer-content>
+
+    <app-goods [dishes]="this.filtredDishes"></app-goods>
+    <!--<app-catalog></app-catalog>   -->
+
+  </mat-drawer-content>
+
+  </mat-drawer-container>

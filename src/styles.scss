@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+.container{
+  margin: 20px;
+  display: flex;
+}
+.comments-comment{
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+}
+.comments-date {
+  margin-left: 20px !important;
+  color: #bababa;
+}

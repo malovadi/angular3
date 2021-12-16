@@ -1,0 +1,38 @@
+
+  <mat-grid-list cols="{{colAadaptive}}" rowHeight="1.5:1" (window:resize)="onResize($event)">
+
+    <mat-grid-tile *ngFor="let item of catalog">
+      <img src={{item.image}}><img>
+      <mat-grid-tile-footer>{{item.name}}</mat-grid-tile-footer>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <app-itemdetail></app-itemdetail>
+<!--<div class ="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+      <h1>Catalog</h1>
+      <hr>
+    </div>
+  </div>
+
+<div fxFlex>
+  <mat-grid-list cols="3"  rowHeight="200px" >
+    <mat-grid-tile *ngFor="let item of items" (click)="onSelect(item)">
+      <img height="200px " src={{item.image}} alt={{item.name}}>
+      <mat-grid-tile-footer>
+        <h1 matLine>{{item.name | uppercase}}</h1>
+        <p matLine>{{item.description}}</p>
+      </mat-grid-tile-footer>
+
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+  <app-itemdetail [item]="selectedItem"></app-itemdetail>
+
+
+</div>
+-->
